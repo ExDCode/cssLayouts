@@ -1,0 +1,87 @@
+
+/* This shows the composition of css children for the header */
+* {
+    box-sizing: border-box;
+}
+
+.c-header
+{
+  background: #EDD382;
+  text-align: center;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+  
+}
+.c-header h1, .c-header h2, .c-header p {
+  max-width: 40em;
+  margin: 0 auto;
+  
+}
+
+.card-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-start;
+    /* max-height: 250px; */
+    /* overflow: scroll */
+    max-height: 45vh;
+    border-style: dotted;
+    border-radius: 1cm;
+    overflow: auto;
+    border-color: aqua;
+
+}
+
+.card-box .crdLeft{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+    .crdLeft > h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+        font-style: italic;
+        padding-left: 1em;
+        border-style: groove;
+    }
+    .crdLeft > ul{
+        border-style: dashed;
+    }
+
+.card-box .crdRight{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    /* height: 45vh; */
+    height: auto;
+    float: right;
+    border-style: dashed;
+    /* object-fit: contain; */
+}
+
+  
+
+.crdRight > img{
+    /* max-height: 45vh; */
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    /* testing the adjusting display */
+
+    /* body > h1{
+      background-color: lightgreen;
+      padding-inline: 25%;
+    } */
+  }
